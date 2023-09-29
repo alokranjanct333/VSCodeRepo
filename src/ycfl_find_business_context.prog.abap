@@ -39,3 +39,10 @@ SELECT cfd_w_bus_ctxt~business_context,cfd_w_bus_ctxt~availability,cfd_w_bus_ctx
 cfd_w_bus_ctxt~persistence_include IS NOT INITIAL
   and cfd_w_bus_ctxt_t~LANGUAGE = @sy-langu
   INTO TABLE @DATA(lt_table_names).
+
+IF sy-subrc = 0.
+  cl_demo_output=>display( lt_table_names ).
+ENDIF.  
+
+*&---------------------------------------------------------------------*
+
