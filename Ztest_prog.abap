@@ -1,5 +1,5 @@
 *select data from mara and show in alv using object oriented programming
-*create a class
+*create a class    
 CLASS lcl_mara DEFINITION.
   PUBLIC SECTION.
     METHODS: get_data.
@@ -109,6 +109,8 @@ START-OF-SELECTION.
   lr_container->display_container( ).
 
 *end of the program
+
+
 
 
 
